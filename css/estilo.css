@@ -1,0 +1,162 @@
+
+html{
+  height: 100%;
+}
+
+
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex: 1 0 auto;
+    min-height: 100vh;
+  }
+  
+  header{
+    flex: 0 0 auto;
+ }
+   
+
+ .container-portada{
+  width: 100%;
+  height: 150%;
+  position: relative;
+  background-image: url(https://www.clarin.com/img/2016/01/12/r1mlSehK4l_720x0.jpg);
+  background-size: 110%;
+  animation: movimiento 20s infinite linear alternate;  
+}
+
+@keyframes movimiento{
+  from{
+      background-position: bottom left;
+  }to{
+      background-position: top right;
+  }
+}
+
+
+
+
+h1{
+    color: white;
+    text-align:center;
+    max-width: 300rem;
+    margin: center;
+    font-family: Arial;
+}
+
+h2, h3{
+    color: white;
+    text-align:left;
+    max-width: 37.25rem;
+    margin: 0 auto;
+    font-family: sans-serif;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-name: prueba2;
+
+    
+}
+@keyframes prueba2 {
+  from {
+    margin-left:100%;
+    width:300%
+  }
+
+  to {
+   margin-left:0%;
+   width:100%;
+ }
+}
+
+
+ul {
+    list-style: none;
+    font-size:0;
+    color: black
+ }
+ li {
+    display: inline-block;
+    width: 15%;
+    position:relative;
+    font-size: 2rem;
+    text-align: center;
+    color: black
+ }
+
+ nav{
+     text-align: center;
+     color: blanchedalmond;
+ }
+@media screen and (min-width: 500px) {
+ @media (min-width: 500px) {
+  h1 {
+    color: red;
+  
+  }
+} 
+
+ .gallery {
+   
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    margin: 0 auto;
+    display: grid;
+    gap: 50px 60px;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    place-items: center;
+ }
+  .gallery img {
+    height: 300px;
+    border-radius: 10px;
+   
+    display: grid;
+  }
+}
+
+.gallery{
+  transition: transform 0.5;
+}
+
+
+.gallery :hover{
+  transform: scale(1.5);
+}
+
+  footer {
+    margin-top: auto;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+  }
+
+
+  form{
+   text-align: center }
+
+   
+
+ 
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:40%;
+  position:relative;
+  height:0;
+  text-align: center;
+}
+
+
+
+
